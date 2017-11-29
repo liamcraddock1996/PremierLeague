@@ -70,8 +70,8 @@
 <!--jumbotron-->
 	<div class="container">
 		<div class="jumbotron">
-			<h1>PC Games!</h1>
-			<p>Here you can see all the best selling PC games including the exclusive games which are not availavle to play on consoles</p>
+			<h1>Map</h1>
+			<p>Here you can see where all the grounds are located.</p>
 			
 		</div>
 	</div>
@@ -84,32 +84,42 @@
 				<div class="thumbnail">
 				  	<img src="assets/mass%20affect%20andromeda.jpg" alt="Article One" style="height:250px;">
 				  	<div class="caption">
-						<h3>Mass affect andromeda</h3>
-						<p>Mass Effect: Andromeda takes players to the Andromeda galaxy, far beyond the Milky Way. There, players will lead our fight for a new home in hostile territory as the Pathfinder - a leader of military-trained explorers. This game can be bought for £42.99</p>
+						<h3>Map</h3>
+						<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Map</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+  </body>
+</html>
 						
 				  	</div>
 				</div>
 			</div>
-		<!--Article 2-->
-			<div class="col-md-4">
-				<div class="thumbnail">
-				  	<img src="assets/minecraft.jpg" alt="Article One" style="height:250px;">
-				  	<div class="caption">
-						<h3>Minecraft</h3>
-						<p>Take part in an epic adventure with a retro style. Create a house or a vast castle; your imagination is your key. This game can be bought for £22.99</p>
-					
-				  	</div>
-				</div>
-			</div>
-		<!--Article 3-->
-			<div class="col-md-4">
-				<div class="thumbnail">
-				  	<img src="assets/world%20of%20warcraft.jpg" alt="Article One" style="height:250px;">
-				  	<div class="caption">
-						<h3>World of Warcraft</h3>
-						<p>The World of Warcraft Legion expansion for PC is the sixth expansion for the ever popular Massively Multiplayer Online RPG. This game can be bought for £34.99</p>
-					
-				  	</div>
+	
 				</div>
 			</div>
             
