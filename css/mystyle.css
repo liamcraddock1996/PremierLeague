@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+}
+
+body {
+	padding-bottom: 80px;
+}
+
+/*about.html page mods*/
+.page-header {
+	margin-top: 0;
+}
+.panel-body {
+	padding-top: 0;
+}
+.featureImg {
+padding-bottom: 15px;	
+}

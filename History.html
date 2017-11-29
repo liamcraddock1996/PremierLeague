@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Project LC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--navigation-->
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">Liam Craddock</a>
+			<!--collapsale menu trigger-->
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+                                  
+                        
+                    
+                    <li class="dropdown">
+						<a href="Xbox.html" class="dropdown-toggle" data-toggle="dropdown">Xbox <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						  <li><a href="xboxOne.html">Xbox One </a></li>
+                          <li><a href ="xbox360.html">Xbox 360</a></li>
+                          <li><a href="backwardcompatibility.html">Xbox Backward Compatibility</a></li>
+						</ul>
+					
+                    <li class="dropdown">
+						<a href="Playstation.html" class="dropdown-toggle" data-toggle="dropdown">Playstation <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="PS4.html">PS4</a></li>
+                            <li><a href="PS3.html">PS3</a></li>
+						</ul>
+					<li class="dropdown">
+						<a href="PC.html" class="dropdown-toggle" data-toggle="dropdown">PC <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+					      <li><a href="PC%20games.html">PC games</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!--jumbotron-->
+	<div class="container">
+		<div class="jumbotron">
+			<h1>PS3!</h1>
+            <p>Here you can see some of the most popular PS3 games.</p>
+		</div>
+	</div>
+	
+<!--grid system-->
+	<div class="container">
+		<div class="row">
+		<!--Article 1-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/destiny.jpg" alt="Article One" style="height:250px;">
+				  	<div class="caption">
+						<h3>Destiny</h3>
+						<p>Destiny is an online-only title and requires access to the PlayStation Network. Some gameplay features require a PS Plus subscription or alternatively on Xbox you will have to have Xbox Live. This game can be bought for £13.49</p>
+						
+				  	</div>
+				</div>
+			</div>
+		<!--Article 2-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/mortal kombat.jpg" alt="Article One" style="height:250px;">
+				  	<div class="caption">
+						<h3>Mortal Kombat X</h3>
+						<p>In this game you can enter into an online contest where every victory and defeat matters.
+With multiple variations of each character, you'll be able to find the fighter that fits your gamestyle perfectly.
+Fight your way through an original story in the classic battle between good and evil. This game can be bought for £23.97</p>
+						
+				  	</div>
+				</div>
+			</div>
+		<!--Article 3-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/skyrim.png" alt="Article One" style="height:250px;">
+				  	<div class="caption">
+						<h3>Skyrim: The Eldor Scrolls V</h3>
+						<p>Winner of more than 200 Game of the Year Awards, Skyrim Special Edition brings the epic fantasy to life in stunning detail. This game can be bought for £26.99 </p>
+						
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!--footer-->
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text">Site Built by Liam Craddock</p>
+			<a class="navbar-btn btn btn-success pull-right" href="#contact" data-toggle="modal">Contact Us</a>
+		</div>
+	</div>
+	
+<!--modal-->
+	<div class="modal fade" id="contact" role="dialog">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <!--form START-->
+               <form class="form-horizontal">
+               <!--HEADER-->
+               <div class="modal-header">
+             <h4>Contact Liam</h4>   
+              </div>
+               <!--BODY-->
+               <div class="modal-body">
+                 
+                   <div class="form-group"><!--name-->
+                      <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                       <div class="col-lg-10">
+                         <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                       </div>
+                   </div>
+                   <div class="form-group"><!--email-->
+                      <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                       <div class="col-lg-10">
+                         <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                       </div>
+                   </div>
+                   <div class="form-group"><!--message-->
+                      <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                       <div class="col-lg-10">
+                         <textarea class="form-control" rows="8"></textarea>
+                       </div>
+                   </div>
+                   
+                   <!--FOOTER-->
+                   <div class="modal-footer">
+                       <button class="btn btn-success" type="submit">Submit</button>
+                      <a class="btn btn-danger" data-dismiss="modal">Close</a>
+                   </div>
+               </div>
+               </form>
+               <!--form END-->
+           </div> 
+       </div>    
+    </div>  
+			<!--Modal Form End-->	
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
